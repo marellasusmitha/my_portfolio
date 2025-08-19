@@ -109,7 +109,7 @@ const Contact = () => {
               </h3>
               {/* 🔥 Formspree integration */}
               <form
-                action="https://formspree.io/f/mkgwqpyn" // ✅ Replace with your actual ID
+                action="https://formspree.io/f/mnnzkaow" // ✅ Replace with your actual ID
                 method="POST"
                 className="flex flex-col gap-4"
               >
