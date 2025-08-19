@@ -112,7 +112,7 @@ const Projects = () => {
               <div className="flex items-center justify-between mb-4">
                 {project.icon}
                 <a 
-                  href="https://github.com/yourusername/your-project-repo"   // 🔗 paste your GitHub link here
+                  href="https://github.com/marellasusmitha"   // 🔗 paste your GitHub link here
                   target="_blank" 
                   rel="noopener noreferrer"
                 >
@@ -132,7 +132,7 @@ const Projects = () => {
               <p className="text-gray-200 mb-4 leading-relaxed">{project.description}</p>
               
               <a 
-                href="https://github.com/yourusername/your-project-repo"   // 🔗 paste your GitHub link here
+                href="https://github.com/marellasusmitha"
                 target="_blank" 
                 rel="noopener noreferrer"
               >

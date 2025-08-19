@@ -1,25 +1,25 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Mail, Linkedin, Github, Send, MessageCircle } from 'lucide-react';
+import React from "react";
+import { motion } from "framer-motion";
+import { Mail, Linkedin, Github, Send, MessageCircle } from "lucide-react";
 
 const Contact = () => {
   const contactLinks = [
     {
-      name: 'Email',
-      value: 'marellasusmithareddy@gmail.com',
-      href: 'mailto:marellasusmithareddy@gmail.com', // ✅ fixed typo here
+      name: "Email",
+      value: "marellasusmithareddy@gmail.com",
+      href: "mailto:marellasusmithareddy@gmail.com", // ✅ fixed typo here
       icon: Mail,
     },
     {
-      name: 'LinkedIn',
-      value: 'linkedin.com/in/marellasusmitha',
-      href: 'http://linkedin.com/in/marella-susmitha-9b1a11265',
+      name: "LinkedIn",
+      value: "linkedin.com/in/marellasusmitha",
+      href: "http://linkedin.com/in/marella-susmitha-9b1a11265",
       icon: Linkedin,
     },
     {
-      name: 'GitHub',
-      value: 'github.com/marellasusmitha',
-      href: 'https://github.com/marellasusmitha',
+      name: "GitHub",
+      value: "github.com/marellasusmitha",
+      href: "https://github.com/marellasusmitha",
       icon: Github,
     },
   ];
@@ -43,7 +43,8 @@ const Contact = () => {
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-cyan-500 to-purple-500 mx-auto rounded-full mb-6"></div>
           <p className="text-lg text-gray-200 max-w-2xl mx-auto">
-            I'm always interested in discussing new opportunities, collaborations, and projects
+            I'm always interested in discussing new opportunities,
+            collaborations, and projects
           </p>
         </motion.div>
 
@@ -81,8 +82,12 @@ const Contact = () => {
                         <Icon size={24} />
                       </div>
                       <div>
-                        <div className="font-semibold text-white">{link.name}</div>
-                        <div className="text-sm text-gray-300">{link.value}</div>
+                        <div className="font-semibold text-white">
+                          {link.name}
+                        </div>
+                        <div className="text-sm text-gray-300">
+                          {link.value}
+                        </div>
                       </div>
                     </motion.a>
                   );
@@ -99,19 +104,46 @@ const Contact = () => {
             transition={{ duration: 0.8 }}
           >
             <div className="bg-gradient-to-br from-white/10 to-white/5 rounded-2xl p-8 shadow-2xl border border-white/20">
-              <h3 className="text-2xl font-bold text-white mb-6">Send a Message</h3>
+              <h3 className="text-2xl font-bold text-white mb-6">
+                Send a Message
+              </h3>
               {/* 🔥 Formspree integration */}
               <form
-                 action="https://formspree.io/f/yourID"
-                 method="POST"
-                 className="flex flex-col gap-4"
+                action="https://formspree.io/f/mkgwqpyn" // ✅ Replace with your actual ID
+                method="POST"
+                className="flex flex-col gap-4"
               >
-                <input type="text" name="name" placeholder="Your Name" required />
-                <input type="email" name="email" placeholder="Your Email" required />
-                <textarea name="message" placeholder="Your Message" required />
-                <button type="submit">Send</button>
-              </form>
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your Name"
+                  required
+                  className="p-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-400"
+                />
 
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your Email"
+                  required
+                  className="p-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-400"
+                />
+
+                <textarea
+                  name="message"
+                  placeholder="Your Message"
+                  required
+                  rows="4"
+                  className="p-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-400"
+                ></textarea>
+
+                <button
+                  type="submit"
+                  className="flex items-center justify-center gap-2 bg-gradient-to-r from-cyan-500 to-purple-500 text-white font-semibold px-6 py-3 rounded-xl shadow-lg hover:scale-105 transform transition-all duration-300"
+                >
+                  <Send size={18} /> Send Message
+                </button>
+              </form>
             </div>
           </motion.div>
         </div>
